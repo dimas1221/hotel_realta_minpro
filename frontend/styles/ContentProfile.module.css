@@ -1,0 +1,164 @@
+.textTitle {
+    display: flex;
+    width: 281px;
+    height: 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding-top: 3%;
+    padding-left:8%;
+    color: white;
+    text-shadow: 0px 0px 5px #F33C5D;
+    
+}
+
+.textTitleEmployee {
+    display: flex;
+    width: 281px;
+    height: 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding-top: 4%;
+    padding-left: 1.5%;
+    color: white;
+    text-shadow: 0px 0px 5px #3C6FF3;
+
+}
+
+.textTitleInProfile {
+    display: flex;
+    width: 281px;
+    height: 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: left;
+    text-justify: left;
+    margin-top: 8;
+}
+
+.textTitleInProfileEdit {
+    display: flex;
+    width: 281px;
+    height: 36px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: left;
+    text-justify: left;
+    margin-top: 8;
+}
+
+.textLabelInProfile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: left;
+}
+
+.formProfile {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    border: gray;
+    width: auto;
+}
+
+@media (max-width: 600px) {
+    .formProfile {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 12px;
+        line-height: 21px;
+        padding-bottom: 10px;
+        width: auto;
+    }
+}
+
+.PTbuttonEditProfile {
+    position: relative;
+}
+
+@media (max-width: 812px) {
+    .PTbuttonEditProfile {
+        position: relative;
+        padding-top: 0px;
+    }
+}
+
+.cardBackground{
+    background: url('/assets/backgroundProfileGuest.png') no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        top: 0;
+}
+
+.cardBackgroundEmpolyee {
+    background: url('/assets/backgroundProfileEmployee.png') no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.textInBackground {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.textInBackgroundEmployee {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.cardInBackground {
+    position: absolute;
+    left: 8%;
+    top: 23%;
+    width: 85%;
+}
+
+.cardInBackgroundEmployee {
+    position: absolute;
+    left: 8%;
+    top: 23%;
+    width: 85%;
+}
+
+

@@ -1,0 +1,1390 @@
+{
+	"info": {
+		"_postman_id": "6b04f1d8-fe1c-40d5-a397-63826c4569a2",
+		"name": "payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24897393"
+	},
+	"item": [
+		{
+			"name": "bank",
+			"item": [
+				{
+					"name": "Get All Bank",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/bank",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Bank by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/bank/40",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"bank",
+								"40"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Bank",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bankCode",
+									"value": "235",
+									"type": "text"
+								},
+								{
+									"key": "bankName",
+									"value": "NewBank",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3005/bank",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"bank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Bank by ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bankName",
+									"value": "BRI",
+									"type": "text"
+								},
+								{
+									"key": "bankCode",
+									"value": "002",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3005/bank/50",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"bank",
+								"50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Bank by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/bank/47",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"bank",
+								"47"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "payment_gateaway",
+			"item": [
+				{
+					"name": "Get All Payment Gateaway",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/payment-gateaway",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"payment-gateaway"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Payment Gateaway by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/payment-gateaway/21",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"payment-gateaway",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Payment Gateway",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/payment-gateaway",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"payment-gateaway"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Payment Gateaway by ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/payment-gateaway/21",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"payment-gateaway",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Payment Gateaway by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/payment-gateaway/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"payment-gateaway",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user_accounts",
+			"item": [
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/user-accounts/",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"user-accounts",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Find All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3005/user-accounts/",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"user-accounts",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4292"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10c4-M+1lWUNxwmn3AYmyQLardkGM/gw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Feb 2023 17:18:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"usacEntityId\": 20,\n        \"usacUserId\": 14,\n        \"usacAccountNumber\": \"697829861\",\n        \"usacSaldo\": \"3456\",\n        \"usacType\": \"Debit Card\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": null,\n        \"usacExpmonth\": 5,\n        \"usacExpyear\": 25,\n        \"usacModifiedDate\": \"2023-01-15T14:13:39.184Z\"\n    },\n    {\n        \"usacEntityId\": 19,\n        \"usacUserId\": 15,\n        \"usacAccountNumber\": \"339091263\",\n        \"usacSaldo\": \"12425678\",\n        \"usacType\": \"Debit Card\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": null,\n        \"usacExpmonth\": 11,\n        \"usacExpyear\": 24,\n        \"usacModifiedDate\": \"2023-01-15T14:13:39.184Z\"\n    },\n    {\n        \"usacEntityId\": 16,\n        \"usacUserId\": 18,\n        \"usacAccountNumber\": \"33797123\",\n        \"usacSaldo\": \"12425678\",\n        \"usacType\": \"Debit Card\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": null,\n        \"usacExpmonth\": 9,\n        \"usacExpyear\": 21,\n        \"usacModifiedDate\": \"2023-01-15T14:13:39.184Z\"\n    },\n    {\n        \"usacEntityId\": 15,\n        \"usacUserId\": 19,\n        \"usacAccountNumber\": \"362944181\",\n        \"usacSaldo\": \"3456\",\n        \"usacType\": \"Debit Card\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": null,\n        \"usacExpmonth\": 12,\n        \"usacExpyear\": 26,\n        \"usacModifiedDate\": \"2023-01-15T14:13:39.184Z\"\n    },\n    {\n        \"usacEntityId\": 14,\n        \"usacUserId\": 20,\n        \"usacAccountNumber\": \"283688167\",\n        \"usacSaldo\": \"12425678\",\n        \"usacType\": \"Debit Card\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": null,\n        \"usacExpmonth\": 1,\n        \"usacExpyear\": 22,\n        \"usacModifiedDate\": \"2023-01-15T14:13:39.184Z\"\n    },\n    {\n        \"usacEntityId\": 26,\n        \"usacUserId\": 2,\n        \"usacAccountNumber\": \"225+6289342968303\",\n        \"usacSaldo\": \"0\",\n        \"usacType\": \"Dompet Realta\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": \"$2b$10$38MupoRjPi2Va4cA4aJfT.q9z6qQ3LW2jKck7wf2a8C0xP29fyl0S\",\n        \"usacExpmonth\": null,\n        \"usacExpyear\": null,\n        \"usacModifiedDate\": \"2023-02-08T14:58:06.085Z\"\n    },\n    {\n        \"usacEntityId\": 26,\n        \"usacUserId\": 3,\n        \"usacAccountNumber\": \"225+6283920429405\",\n        \"usacSaldo\": \"0\",\n        \"usacType\": \"Dompet Realta\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": \"$2b$10$XSoUdLcoY6NPouSSLqj4D.mVS8DpgAJeQA1LYx4eg22JAlXQ92Yfm\",\n        \"usacExpmonth\": null,\n        \"usacExpyear\": null,\n        \"usacModifiedDate\": \"2023-02-08T15:07:59.790Z\"\n    },\n    {\n        \"usacEntityId\": 26,\n        \"usacUserId\": 4,\n        \"usacAccountNumber\": \"225+6285830596205\",\n        \"usacSaldo\": \"0\",\n        \"usacType\": \"Dompet Realta\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": \"$2b$10$CrHsITJBYb/cwkQ1ks.iOO5MHQBugQE3gZ8gOlr82NnQ6k46YHsYy\",\n        \"usacExpmonth\": null,\n        \"usacExpyear\": null,\n        \"usacModifiedDate\": \"2023-02-08T15:08:52.238Z\"\n    },\n    {\n        \"usacEntityId\": 26,\n        \"usacUserId\": 5,\n        \"usacAccountNumber\": \"225+6284320985945\",\n        \"usacSaldo\": \"0\",\n        \"usacType\": \"Dompet Realta\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": \"$2b$10$Q6v.i.askGtjfGBAYWmG/O7ESQRgcXkoRFsdfhX18vB/SrURvi.mC\",\n        \"usacExpmonth\": null,\n        \"usacExpyear\": null,\n        \"usacModifiedDate\": \"2023-02-08T15:10:14.571Z\"\n    },\n    {\n        \"usacEntityId\": 26,\n        \"usacUserId\": 6,\n        \"usacAccountNumber\": \"225+6286565748375\",\n        \"usacSaldo\": \"0\",\n        \"usacType\": \"Dompet Realta\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": \"$2b$10$vAJAAyuCUOs0tyUBmbTwY.BKGZGZLaTnrDi5beEYM0j8kRjzjMkH.\",\n        \"usacExpmonth\": null,\n        \"usacExpyear\": null,\n        \"usacModifiedDate\": \"2023-02-08T15:16:55.850Z\"\n    },\n    {\n        \"usacEntityId\": 26,\n        \"usacUserId\": 7,\n        \"usacAccountNumber\": \"225+6281029384756\",\n        \"usacSaldo\": \"0\",\n        \"usacType\": \"Dompet Realta\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": \"$2b$10$tFutIWtZJjahNmvenGsdMOkQWqg8garNjdf8UjhXYdubqkwTsMoFK\",\n        \"usacExpmonth\": null,\n        \"usacExpyear\": null,\n        \"usacModifiedDate\": \"2023-02-08T15:18:59.275Z\"\n    },\n    {\n        \"usacEntityId\": 26,\n        \"usacUserId\": 8,\n        \"usacAccountNumber\": \"225+6288745095382\",\n        \"usacSaldo\": \"0\",\n        \"usacType\": \"Dompet Realta\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": \"$2b$10$AODSxMZUvS8/e7xwTCdCnuwa0m/6jBn6q.C1.WTohNKDlbm.q/yDm\",\n        \"usacExpmonth\": null,\n        \"usacExpyear\": null,\n        \"usacModifiedDate\": \"2023-02-08T15:20:17.929Z\"\n    },\n    {\n        \"usacEntityId\": 26,\n        \"usacUserId\": 9,\n        \"usacAccountNumber\": \"225+6288473994839\",\n        \"usacSaldo\": \"0\",\n        \"usacType\": \"Dompet Realta\",\n        \"usacCardHolderName\": \"Patrick\",\n        \"usacSecuredKey\": \"$2b$10$AJ7nGJqUrysJyceagCB5Du0M2dBAe4JHzHvyOvdW0SfTCw7FIHK/O\",\n        \"usacExpmonth\": 9,\n        \"usacExpyear\": 25,\n        \"usacModifiedDate\": \"2023-02-09T06:50:41.676Z\"\n    },\n    {\n        \"usacEntityId\": 26,\n        \"usacUserId\": 10,\n        \"usacAccountNumber\": \"225+62846392058396\",\n        \"usacSaldo\": \"0\",\n        \"usacType\": \"Dompet Realta\",\n        \"usacCardHolderName\": null,\n        \"usacSecuredKey\": \"$2b$10$LBpSAtfFYTv6NY1s/gv1w.kgDs9uJl9H0bsR0Xlc9L46KUd0Rve4m\",\n        \"usacExpmonth\": null,\n        \"usacExpyear\": null,\n        \"usacModifiedDate\": \"2023-02-09T06:57:43.610Z\"\n    },\n    {\n        \"usacEntityId\": 3,\n        \"usacUserId\": 1,\n        \"usacAccountNumber\": \"2345678987\",\n        \"usacSaldo\": null,\n        \"usacType\": \"Credit Card\",\n        \"usacCardHolderName\": \"Patrick\",\n        \"usacSecuredKey\": \"$2b$10$CVGFfdOL2Qp.xSeH3QwlhOBcGKk.QFHOIoTSvxzGwHrFOVs9IbMiS\",\n        \"usacExpmonth\": 3,\n        \"usacExpyear\": 26,\n        \"usacModifiedDate\": \"2023-02-21T10:02:38.768Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Find by Filter(s)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/user-accounts/filter?userId=1",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"user-accounts",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "accountNumber",
+									"value": "7515272613",
+									"disabled": true
+								},
+								{
+									"key": "bankName",
+									"value": "BCA",
+									"disabled": true
+								},
+								{
+									"key": "userName",
+									"value": "f",
+									"disabled": true
+								},
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Find by Filter(s)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3005/user-accounts/filter?userId=1",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"user-accounts",
+										"filter"
+									],
+									"query": [
+										{
+											"key": "accountNumber",
+											"value": "7515272613",
+											"disabled": true
+										},
+										{
+											"key": "bankName",
+											"value": "BCA",
+											"disabled": true
+										},
+										{
+											"key": "userName",
+											"value": "f",
+											"disabled": true
+										},
+										{
+											"key": "userId",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1353"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"549-1lBwuyCJFlN6uP+s1dlkKNXupAM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Feb 2023 14:50:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"userId\": 1,\n        \"fullName\": \"Faqih Pratama Muhti\",\n        \"paymentType\": \"Fintech\",\n        \"paymentName\": \"Dompet Realta\",\n        \"accountNumber\": \"225+6281212499837\",\n        \"cardHolderName\": null,\n        \"balance\": \"0\",\n        \"expMonth\": null,\n        \"expYear\": null,\n        \"securedKey\": \"$2b$10$vUtn65Q4SE8ZzTyDJBPWtuNbvj6WojfvTwAKpMGVBY3LUIL1qyWBe\"\n    },\n    {\n        \"userId\": 1,\n        \"fullName\": \"Faqih Pratama Muhti\",\n        \"paymentType\": \"Fintech\",\n        \"paymentName\": \"GoTo\",\n        \"accountNumber\": \"522+6281212499837\",\n        \"cardHolderName\": null,\n        \"balance\": \"10000\",\n        \"expMonth\": null,\n        \"expYear\": null,\n        \"securedKey\": \"$2b$10$VuOYXbZX99TiZ2OceeK27ure9oJBuJ3YdLof5bervxUKUfiS.ihqe\"\n    },\n    {\n        \"userId\": 1,\n        \"fullName\": \"Faqih Pratama Muhti\",\n        \"paymentType\": \"Credit Card\",\n        \"paymentName\": \"BCA\",\n        \"accountNumber\": \"3245678\",\n        \"cardHolderName\": \"Patrick\",\n        \"balance\": null,\n        \"expMonth\": 3,\n        \"expYear\": 26,\n        \"securedKey\": \"$2b$10$X2v7hrd7IJpZH1mpf3gNQOCYgRWeRDd90ZY0SFOK8LO707g/CqRbS\"\n    },\n    {\n        \"userId\": 1,\n        \"fullName\": \"Faqih Pratama Muhti\",\n        \"paymentType\": \"Credit Card\",\n        \"paymentName\": \"BNI\",\n        \"accountNumber\": \"1234567890\",\n        \"cardHolderName\": \"Patrick\",\n        \"balance\": null,\n        \"expMonth\": 3,\n        \"expYear\": 26,\n        \"securedKey\": \"$2b$10$5ALwPesv58Pray97Fapcx.I2R11sHFitl8/HeGBFDGCyZiPM6isdi\"\n    },\n    {\n        \"userId\": 1,\n        \"fullName\": \"Faqih Pratama Muhti\",\n        \"paymentType\": \"Credit Card\",\n        \"paymentName\": \"BRI\",\n        \"accountNumber\": \"13213213213\",\n        \"cardHolderName\": \"Patrick\",\n        \"balance\": null,\n        \"expMonth\": 3,\n        \"expYear\": 26,\n        \"securedKey\": \"$2b$10$1USzljYXjuwsELFhJnrcIemYQtZTbTJxJvYGTfJ/JHpOttDNUsM0i\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create User Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "paymentType",
+									"value": "Fintech",
+									"type": "text"
+								},
+								{
+									"key": "paymentName",
+									"value": "Dompet Realta",
+									"type": "text"
+								},
+								{
+									"key": "securedKey",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "cardHolderName",
+									"value": "Patrick",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "accountNumber",
+									"value": "1234567890",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "expMonth",
+									"value": "03",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "expYear",
+									"value": "26",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3005/user-accounts/add",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"user-accounts",
+								"add"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Bank Account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "userId",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "paymentType",
+											"value": "Credit Card",
+											"type": "text"
+										},
+										{
+											"key": "cardHolderName",
+											"value": "Fadli Pratama Muhti",
+											"type": "text"
+										},
+										{
+											"key": "securedKey",
+											"value": "138",
+											"type": "text"
+										},
+										{
+											"key": "paymentName",
+											"value": "BCA",
+											"type": "text"
+										},
+										{
+											"key": "accountNumber",
+											"value": "4449034478379498",
+											"type": "text"
+										},
+										{
+											"key": "expMonth",
+											"value": "03",
+											"type": "text"
+										},
+										{
+											"key": "expYear",
+											"value": "26",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3005/user-accounts/add/",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"user-accounts",
+										"add",
+										""
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "577"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"241-vvYtsta3xPwr4VncBTya4JzXxHM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Feb 2023 18:15:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"userid\": 1,\n        \"fullname\": \"Faqih Pratama Muhti\",\n        \"paymenttype\": \"Credit Card\",\n        \"paymentName\": \"Mandiri\",\n        \"accountnumber\": \"21122312132\",\n        \"cardholdername\": \"Patrick\",\n        \"balance\": null,\n        \"expmonth\": 3,\n        \"expyear\": 26\n    },\n    {\n        \"userid\": 1,\n        \"fullname\": \"Faqih Pratama Muhti\",\n        \"paymenttype\": \"Credit Card\",\n        \"paymentName\": \"BRI\",\n        \"accountnumber\": \"13213213213\",\n        \"cardholdername\": \"Patrick\",\n        \"balance\": null,\n        \"expmonth\": 3,\n        \"expyear\": 26\n    },\n    {\n        \"userid\": 1,\n        \"fullname\": \"Faqih Pratama Muhti\",\n        \"paymenttype\": \"Credit Card\",\n        \"paymentName\": \"BCA\",\n        \"accountnumber\": \"3245678\",\n        \"cardholdername\": \"Patrick\",\n        \"balance\": null,\n        \"expmonth\": 3,\n        \"expyear\": 26\n    }\n]"
+						},
+						{
+							"name": "Create DR Account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "userId",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "paymentType",
+											"value": "Dompet Realta",
+											"type": "text"
+										},
+										{
+											"key": "cardHolderName",
+											"value": "Patrick",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "securedKey",
+											"value": "1234",
+											"type": "text"
+										},
+										{
+											"key": "paymentName",
+											"value": "BNI",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "accountNumber",
+											"value": "1234567890",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "expMonth",
+											"value": "03",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "expYear",
+											"value": "26",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3005/user-accounts/add",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"user-accounts",
+										"add"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1085"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"43d-tDYuOl7LJ1D85kS6SzEuHNPRb6Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Feb 2023 08:07:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"userId\": 1,\n        \"fullName\": \"Faqih Pratama Muhti\",\n        \"paymentType\": \"Credit Card\",\n        \"paymentName\": \"BRI\",\n        \"accountNumber\": \"13213213213\",\n        \"cardHolderName\": \"Patrick\",\n        \"balance\": null,\n        \"expMonth\": 3,\n        \"expYear\": 26,\n        \"securedKey\": \"$2b$10$1USzljYXjuwsELFhJnrcIemYQtZTbTJxJvYGTfJ/JHpOttDNUsM0i\"\n    },\n    {\n        \"userId\": 1,\n        \"fullName\": \"Faqih Pratama Muhti\",\n        \"paymentType\": \"Credit Card\",\n        \"paymentName\": \"BCA\",\n        \"accountNumber\": \"3245678\",\n        \"cardHolderName\": \"Patrick\",\n        \"balance\": null,\n        \"expMonth\": 3,\n        \"expYear\": 26,\n        \"securedKey\": \"$2b$10$X2v7hrd7IJpZH1mpf3gNQOCYgRWeRDd90ZY0SFOK8LO707g/CqRbS\"\n    },\n    {\n        \"userId\": 1,\n        \"fullName\": \"Faqih Pratama Muhti\",\n        \"paymentType\": \"Credit Card\",\n        \"paymentName\": \"BNI\",\n        \"accountNumber\": \"1234567890\",\n        \"cardHolderName\": \"Patrick\",\n        \"balance\": null,\n        \"expMonth\": 3,\n        \"expYear\": 26,\n        \"securedKey\": \"$2b$10$5ALwPesv58Pray97Fapcx.I2R11sHFitl8/HeGBFDGCyZiPM6isdi\"\n    },\n    {\n        \"userId\": 1,\n        \"fullName\": \"Faqih Pratama Muhti\",\n        \"paymentType\": \"Dompet Realta\",\n        \"paymentName\": \"Dompet Realta\",\n        \"accountNumber\": \"225+6281212499837\",\n        \"cardHolderName\": null,\n        \"balance\": \"0\",\n        \"expMonth\": null,\n        \"expYear\": null,\n        \"securedKey\": \"$2b$10$hat7Ts5ZZfAmLoMNsA/qOuy9tNs0PNtx/270G/ZrccTsOL1gyUm7m\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Update User Account (PIN)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "securedKey",
+									"value": "543",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3005/user-accounts/540613157",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"user-accounts",
+								"540613157"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update User Account (PIN)",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "securedKey",
+											"value": "543",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3005/user-accounts/540613157",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"user-accounts",
+										"540613157"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-ltfShVBsc0RDkiXjC0rzRI4/1UI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Feb 2023 13:04:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Account 540613157 is successfully updated!"
+						}
+					]
+				},
+				{
+					"name": "Delete User Account",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/user-accounts/4565435298",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"user-accounts",
+								"4565435298"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete User Account",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3005/user-accounts/1234567231",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"user-accounts",
+										"1234567231"
+									],
+									"query": [
+										{
+											"key": "acc",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "43"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b-U8CyDFJVqmJAkDUx3Lz9ROSA4x0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Feb 2023 17:22:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Account 1234567231 is successfully deleted!"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "payment_transaction",
+			"item": [
+				{
+					"name": "Get All Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/transaction/filter?transactionType=TP&page=1",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"transaction",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "transactionType",
+									"value": "TP"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Transactions",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3005/transaction",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"transaction"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4760"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1298-gZx1cwQLruT59Wbmz6MK1dWUDBg\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Feb 2023 07:54:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"patr_id\": 1,\n        \"patr_trx_number\": \"ORM#20221127-0001\",\n        \"patr_date\": \"27 Nov 2022\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"23000\",\n        \"patr_type\": \"ORM\",\n        \"patr_note\": \"Resto payment MENUS#20221127-0001\",\n        \"patr_order_number\": \"MENUS#20221127-0001\",\n        \"patr_source_id\": 452359774,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"173998125011395\",\n        \"patr_user_id\": 1,\n        \"user_full_name\": \"Faqih Pratama Muhti\"\n    },\n    {\n        \"patr_id\": 2,\n        \"patr_trx_number\": \"ORM#20221127-0002\",\n        \"patr_date\": \"27 Nov 2022\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"100293\",\n        \"patr_type\": \"ORM\",\n        \"patr_note\": \"Resto payment MENUS#20221127-0002\",\n        \"patr_order_number\": \"MENUS#20221127-0002\",\n        \"patr_source_id\": 454657953,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"512280519037308\",\n        \"patr_user_id\": 2,\n        \"user_full_name\": \"Fadli Pratama Muhti\"\n    },\n    {\n        \"patr_id\": 3,\n        \"patr_trx_number\": \"ORM#20221127-0003\",\n        \"patr_date\": \"27 Nov 2022\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"593029\",\n        \"patr_type\": \"ORM\",\n        \"patr_note\": \"Resto payment MENUS#20221127-0003\",\n        \"patr_order_number\": \"MENUS#20221127-0003\",\n        \"patr_source_id\": 292664502,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"286335871602711\",\n        \"patr_user_id\": 3,\n        \"user_full_name\": \"Firly Isnaeni Muhti\"\n    },\n    {\n        \"patr_id\": 4,\n        \"patr_trx_number\": \"ORM#20221127-0004\",\n        \"patr_date\": \"27 Nov 2022\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"34500\",\n        \"patr_type\": \"ORM\",\n        \"patr_note\": \"Resto payment MENUS#20221127-0004\",\n        \"patr_order_number\": \"MENUS#20221127-0004\",\n        \"patr_source_id\": 708430150,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"93769171110789\",\n        \"patr_user_id\": 4,\n        \"user_full_name\": \"Fitrya Muhti\"\n    },\n    {\n        \"patr_id\": 5,\n        \"patr_trx_number\": \"ORM#20221127-0005\",\n        \"patr_date\": \"27 Nov 2022\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"122200\",\n        \"patr_type\": \"ORM\",\n        \"patr_note\": \"Resto payment MENUS#20221127-0005\",\n        \"patr_order_number\": \"MENUS#20221127-0005\",\n        \"patr_source_id\": 783391110,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"99291587940019\",\n        \"patr_user_id\": 5,\n        \"user_full_name\": \"Uzumaki Naruto\"\n    },\n    {\n        \"patr_id\": 6,\n        \"patr_trx_number\": \"ORM#20221127-0006\",\n        \"patr_date\": \"27 Nov 2022\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"350994\",\n        \"patr_type\": \"ORM\",\n        \"patr_note\": \"Resto payment MENUS#20221127-0006\",\n        \"patr_order_number\": \"MENUS#20221127-0006\",\n        \"patr_source_id\": 791028319,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"629137858646535\",\n        \"patr_user_id\": 6,\n        \"user_full_name\": \"Uchiha Sasuke\"\n    },\n    {\n        \"patr_id\": 7,\n        \"patr_trx_number\": \"ORM#20221127-0007\",\n        \"patr_date\": \"27 Nov 2022\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"1285600\",\n        \"patr_type\": \"ORM\",\n        \"patr_note\": \"Resto payment MENUS#20221127-0007\",\n        \"patr_order_number\": \"MENUS#20221127-0007\",\n        \"patr_source_id\": 342368297,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"130277420661500\",\n        \"patr_user_id\": 7,\n        \"user_full_name\": \"Orochimaru\"\n    },\n    {\n        \"patr_id\": 8,\n        \"patr_trx_number\": \"ORM#20221127-0008\",\n        \"patr_date\": \"27 Nov 2022\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"359282\",\n        \"patr_type\": \"ORM\",\n        \"patr_note\": \"Resto payment MENUS#20221127-0008\",\n        \"patr_order_number\": \"MENUS#20221127-0008\",\n        \"patr_source_id\": 249696629,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"883730630919750\",\n        \"patr_user_id\": 8,\n        \"user_full_name\": \"Kakashi Hatake\"\n    },\n    {\n        \"patr_id\": 9,\n        \"patr_trx_number\": \"ORM#20221127-0009\",\n        \"patr_date\": \"27 Nov 2022\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"46000\",\n        \"patr_type\": \"ORM\",\n        \"patr_note\": \"Resto payment MENUS#20221127-0009\",\n        \"patr_order_number\": \"MENUS#20221127-0009\",\n        \"patr_source_id\": 934733102,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"677758921347277\",\n        \"patr_user_id\": 9,\n        \"user_full_name\": \"Uchiha Itachi\"\n    },\n    {\n        \"patr_id\": 10,\n        \"patr_trx_number\": \"ORM#20221127-0010\",\n        \"patr_date\": \"27 Nov 2022\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"76864\",\n        \"patr_type\": \"ORM\",\n        \"patr_note\": \"Resto payment MENUS#20221127-0010\",\n        \"patr_order_number\": \"MENUS#20221127-0010\",\n        \"patr_source_id\": 444752581,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"40115831451289\",\n        \"patr_user_id\": 10,\n        \"user_full_name\": \"Senju Tsunade\"\n    },\n    {\n        \"patr_id\": 11,\n        \"patr_trx_number\": \"TP#20230115-0011\",\n        \"patr_date\": \"15 Jan 2023\",\n        \"patr_debet\": \"300000\",\n        \"patr_credit\": \"0\",\n        \"patr_type\": \"TP \",\n        \"patr_note\": \"Top up 300000 to751527261\",\n        \"patr_order_number\": null,\n        \"patr_source_id\": 1,\n        \"patr_target_id\": 751527261,\n        \"patr_trx_number_ref\": \"356918839722894\",\n        \"patr_user_id\": 1,\n        \"user_full_name\": \"Faqih Pratama Muhti\"\n    },\n    {\n        \"patr_id\": 12,\n        \"patr_trx_number\": \"RF#20230115-0012\",\n        \"patr_date\": \"15 Jan 2023\",\n        \"patr_debet\": \"250000\",\n        \"patr_credit\": \"0\",\n        \"patr_type\": \"RF \",\n        \"patr_note\": \"Refund 250000 to383667679\",\n        \"patr_order_number\": null,\n        \"patr_source_id\": 326625809,\n        \"patr_target_id\": 383667679,\n        \"patr_trx_number_ref\": \"289521002551082\",\n        \"patr_user_id\": 2,\n        \"user_full_name\": \"Fadli Pratama Muhti\"\n    },\n    {\n        \"patr_id\": 13,\n        \"patr_trx_number\": \"RPY#20230115-0013\",\n        \"patr_date\": \"15 Jan 2023\",\n        \"patr_debet\": \"0\",\n        \"patr_credit\": \"50000\",\n        \"patr_type\": \"RPY\",\n        \"patr_note\": \"Repayment 50000 to326625809\",\n        \"patr_order_number\": null,\n        \"patr_source_id\": 264253607,\n        \"patr_target_id\": 326625809,\n        \"patr_trx_number_ref\": \"250037679222751\",\n        \"patr_user_id\": 3,\n        \"user_full_name\": \"Firly Isnaeni Muhti\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Find by Filter(s)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3005/transaction/filter?transactionType=TP",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"transaction",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "transactionId",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "userId",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "transactionNumber",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "transactionType",
+									"value": "TP"
+								},
+								{
+									"key": "sourceNumber",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Payment Transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "orderNumber",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "paymentType",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "transactionType",
+									"value": "TP",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "43000",
+									"type": "text"
+								},
+								{
+									"key": "sourceNumber",
+									"value": "143242341",
+									"type": "text"
+								},
+								{
+									"key": "targetNumber",
+									"value": "2256281212499837",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3005/transaction/new",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"transaction",
+								"new"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Payment Transaction",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "userId",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "orderNumber",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "paymentType",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "transactionType",
+											"value": "TP",
+											"type": "text"
+										},
+										{
+											"key": "amount",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "sourceNumber",
+											"value": "13213213213",
+											"type": "text"
+										},
+										{
+											"key": "targetNumber",
+											"value": "2256281212499837",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3005/transaction/new",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"transaction",
+										"new"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "6552"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1998-MNSuShBYTcu4xHF/eY8kSiUlcxQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Feb 2023 10:31:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"patrId\": 1,\n        \"patrTrxNumber\": \"ORM#20221127-0001\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"23000\",\n        \"patrType\": \"ORM\",\n        \"patrNote\": \"Resto payment MENUS#20221127-0001\",\n        \"patrModifiedDate\": \"2023-01-15T14:24:16.242Z\",\n        \"patrOrderNumber\": \"MENUS#20221127-0001\",\n        \"patrTrxNumberRef\": \"173998125011395\",\n        \"patrSourceId\": \"452359774\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 2,\n        \"patrTrxNumber\": \"ORM#20221127-0002\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"100293\",\n        \"patrType\": \"ORM\",\n        \"patrNote\": \"Resto payment MENUS#20221127-0002\",\n        \"patrModifiedDate\": \"2023-01-15T14:29:59.131Z\",\n        \"patrOrderNumber\": \"MENUS#20221127-0002\",\n        \"patrTrxNumberRef\": \"512280519037308\",\n        \"patrSourceId\": \"454657953\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 3,\n        \"patrTrxNumber\": \"ORM#20221127-0003\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"593029\",\n        \"patrType\": \"ORM\",\n        \"patrNote\": \"Resto payment MENUS#20221127-0003\",\n        \"patrModifiedDate\": \"2023-01-15T14:29:59.131Z\",\n        \"patrOrderNumber\": \"MENUS#20221127-0003\",\n        \"patrTrxNumberRef\": \"286335871602711\",\n        \"patrSourceId\": \"292664502\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 4,\n        \"patrTrxNumber\": \"ORM#20221127-0004\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"34500\",\n        \"patrType\": \"ORM\",\n        \"patrNote\": \"Resto payment MENUS#20221127-0004\",\n        \"patrModifiedDate\": \"2023-01-15T14:29:59.131Z\",\n        \"patrOrderNumber\": \"MENUS#20221127-0004\",\n        \"patrTrxNumberRef\": \"93769171110789\",\n        \"patrSourceId\": \"708430150\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 5,\n        \"patrTrxNumber\": \"ORM#20221127-0005\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"122200\",\n        \"patrType\": \"ORM\",\n        \"patrNote\": \"Resto payment MENUS#20221127-0005\",\n        \"patrModifiedDate\": \"2023-01-15T14:29:59.131Z\",\n        \"patrOrderNumber\": \"MENUS#20221127-0005\",\n        \"patrTrxNumberRef\": \"99291587940019\",\n        \"patrSourceId\": \"783391110\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 6,\n        \"patrTrxNumber\": \"ORM#20221127-0006\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"350994\",\n        \"patrType\": \"ORM\",\n        \"patrNote\": \"Resto payment MENUS#20221127-0006\",\n        \"patrModifiedDate\": \"2023-01-15T14:29:59.131Z\",\n        \"patrOrderNumber\": \"MENUS#20221127-0006\",\n        \"patrTrxNumberRef\": \"629137858646535\",\n        \"patrSourceId\": \"791028319\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 7,\n        \"patrTrxNumber\": \"ORM#20221127-0007\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"1285600\",\n        \"patrType\": \"ORM\",\n        \"patrNote\": \"Resto payment MENUS#20221127-0007\",\n        \"patrModifiedDate\": \"2023-01-15T14:29:59.131Z\",\n        \"patrOrderNumber\": \"MENUS#20221127-0007\",\n        \"patrTrxNumberRef\": \"130277420661500\",\n        \"patrSourceId\": \"342368297\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 8,\n        \"patrTrxNumber\": \"ORM#20221127-0008\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"359282\",\n        \"patrType\": \"ORM\",\n        \"patrNote\": \"Resto payment MENUS#20221127-0008\",\n        \"patrModifiedDate\": \"2023-01-15T14:29:59.131Z\",\n        \"patrOrderNumber\": \"MENUS#20221127-0008\",\n        \"patrTrxNumberRef\": \"883730630919750\",\n        \"patrSourceId\": \"249696629\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 9,\n        \"patrTrxNumber\": \"ORM#20221127-0009\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"46000\",\n        \"patrType\": \"ORM\",\n        \"patrNote\": \"Resto payment MENUS#20221127-0009\",\n        \"patrModifiedDate\": \"2023-01-15T14:29:59.131Z\",\n        \"patrOrderNumber\": \"MENUS#20221127-0009\",\n        \"patrTrxNumberRef\": \"677758921347277\",\n        \"patrSourceId\": \"934733102\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 10,\n        \"patrTrxNumber\": \"ORM#20221127-0010\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"76864\",\n        \"patrType\": \"ORM\",\n        \"patrNote\": \"Resto payment MENUS#20221127-0010\",\n        \"patrModifiedDate\": \"2023-01-15T14:29:59.131Z\",\n        \"patrOrderNumber\": \"MENUS#20221127-0010\",\n        \"patrTrxNumberRef\": \"40115831451289\",\n        \"patrSourceId\": \"444752581\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 11,\n        \"patrTrxNumber\": \"TP#20230115-0011\",\n        \"patrDebet\": \"300000\",\n        \"patrCredit\": \"0\",\n        \"patrType\": \"TP \",\n        \"patrNote\": \"Top up 300000 to751527261\",\n        \"patrModifiedDate\": \"2023-01-15T15:09:27.423Z\",\n        \"patrOrderNumber\": null,\n        \"patrTrxNumberRef\": \"356918839722894\",\n        \"patrSourceId\": \"1\",\n        \"patrTargetId\": \"751527261\"\n    },\n    {\n        \"patrId\": 12,\n        \"patrTrxNumber\": \"RF#20230115-0012\",\n        \"patrDebet\": \"250000\",\n        \"patrCredit\": \"0\",\n        \"patrType\": \"RF \",\n        \"patrNote\": \"Refund 250000 to383667679\",\n        \"patrModifiedDate\": \"2023-01-15T15:09:27.423Z\",\n        \"patrOrderNumber\": null,\n        \"patrTrxNumberRef\": \"289521002551082\",\n        \"patrSourceId\": \"326625809\",\n        \"patrTargetId\": \"383667679\"\n    },\n    {\n        \"patrId\": 13,\n        \"patrTrxNumber\": \"RPY#20230115-0013\",\n        \"patrDebet\": \"0\",\n        \"patrCredit\": \"50000\",\n        \"patrType\": \"RPY\",\n        \"patrNote\": \"Repayment 50000 to326625809\",\n        \"patrModifiedDate\": \"2023-01-15T15:09:27.423Z\",\n        \"patrOrderNumber\": null,\n        \"patrTrxNumberRef\": \"250037679222751\",\n        \"patrSourceId\": \"264253607\",\n        \"patrTargetId\": \"326625809\"\n    },\n    {\n        \"patrId\": 14,\n        \"patrTrxNumber\": \"TP#20230223-0014\",\n        \"patrDebet\": \"90000\",\n        \"patrCredit\": \"0\",\n        \"patrType\": \"TP \",\n        \"patrNote\": \"Dompet Realta top up From BNI, 1234567890\",\n        \"patrModifiedDate\": \"2023-02-23T10:09:10.884Z\",\n        \"patrOrderNumber\": \"BNI_20230223246853717466835\",\n        \"patrTrxNumberRef\": \"246853717466835\",\n        \"patrSourceId\": \"1234567890\",\n        \"patrTargetId\": null\n    },\n    {\n        \"patrId\": 15,\n        \"patrTrxNumber\": \"TP#20230223-0015\",\n        \"patrDebet\": \"100000\",\n        \"patrCredit\": \"0\",\n        \"patrType\": \"TP \",\n        \"patrNote\": \"Dompet Realta top up From BRI, 13213213213\",\n        \"patrModifiedDate\": \"2023-02-23T10:14:51.011Z\",\n        \"patrOrderNumber\": \"BRI_20230223273724511300667\",\n        \"patrTrxNumberRef\": \"273724511300667\",\n        \"patrSourceId\": \"13213213213\",\n        \"patrTargetId\": null\n    },\n    {\n        \"patrId\": 16,\n        \"patrTrxNumber\": \"TP#20230223-0016\",\n        \"patrDebet\": \"100000\",\n        \"patrCredit\": \"0\",\n        \"patrType\": \"TP \",\n        \"patrNote\": \"Dompet Realta top up From BRI, 13213213213\",\n        \"patrModifiedDate\": \"2023-02-23T10:19:54.517Z\",\n        \"patrOrderNumber\": \"BRI_20230223910433343226071\",\n        \"patrTrxNumberRef\": \"910433343226071\",\n        \"patrSourceId\": \"13213213213\",\n        \"patrTargetId\": null\n    },\n    {\n        \"patrId\": 17,\n        \"patrTrxNumber\": \"TP#20230223-0017\",\n        \"patrDebet\": \"10000\",\n        \"patrCredit\": \"0\",\n        \"patrType\": \"TP \",\n        \"patrNote\": \"Dompet Realta top up From BRI, 13213213213\",\n        \"patrModifiedDate\": \"2023-02-23T10:21:19.040Z\",\n        \"patrOrderNumber\": \"BRI_20230223623278749435029\",\n        \"patrTrxNumberRef\": \"623278749435029\",\n        \"patrSourceId\": \"13213213213\",\n        \"patrTargetId\": null\n    },\n    {\n        \"patrId\": 18,\n        \"patrTrxNumber\": \"TP#20230223-0018\",\n        \"patrDebet\": \"10000\",\n        \"patrCredit\": \"0\",\n        \"patrType\": \"TP \",\n        \"patrNote\": \"Dompet Realta top up From BRI, 13213213213\",\n        \"patrModifiedDate\": \"2023-02-23T10:22:51.898Z\",\n        \"patrOrderNumber\": \"BRI_20230223516552812328429\",\n        \"patrTrxNumberRef\": \"516552812328429\",\n        \"patrSourceId\": \"13213213213\",\n        \"patrTargetId\": null\n    },\n    {\n        \"patrId\": 19,\n        \"patrTrxNumber\": \"TP#20230223-0019\",\n        \"patrDebet\": \"10000\",\n        \"patrCredit\": \"0\",\n        \"patrType\": \"TP \",\n        \"patrNote\": \"Dompet Realta top up From BRI, 13213213213\",\n        \"patrModifiedDate\": \"2023-02-23T10:29:06.902Z\",\n        \"patrOrderNumber\": \"BRI_20230223476548908300626\",\n        \"patrTrxNumberRef\": \"476548908300626\",\n        \"patrSourceId\": \"13213213213\",\n        \"patrTargetId\": null\n    },\n    {\n        \"patrId\": 20,\n        \"patrTrxNumber\": \"TP#20230223-0020\",\n        \"patrDebet\": \"50000\",\n        \"patrCredit\": \"0\",\n        \"patrType\": \"TP \",\n        \"patrNote\": \"Dompet Realta top up From BRI, 13213213213\",\n        \"patrModifiedDate\": \"2023-02-23T10:31:01.002Z\",\n        \"patrOrderNumber\": \"BRI_20230223772314496349894\",\n        \"patrTrxNumberRef\": \"772314496349894\",\n        \"patrSourceId\": \"13213213213\",\n        \"patrTargetId\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create Booking Payment Transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userId",
+									"value": "10"
+								},
+								{
+									"key": "orderNumber",
+									"value": "MENUS#20221127-0001"
+								},
+								{
+									"key": "paymentType",
+									"value": "Debit Card"
+								},
+								{
+									"key": "amount",
+									"value": "500000"
+								},
+								{
+									"key": "sourceNumber",
+									"value": "964878283"
+								},
+								{
+									"key": "targetNumber",
+									"value": "11"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3005/transaction/new",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"transaction",
+								"new"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "orderNumber",
+									"value": "MENUS#232320230213-0001",
+									"disabled": true
+								},
+								{
+									"key": "paymentType",
+									"value": "Debit Card",
+									"disabled": true
+								},
+								{
+									"key": "amount",
+									"value": "500000",
+									"disabled": true
+								},
+								{
+									"key": "sourceNumber",
+									"value": "964878283",
+									"disabled": true
+								},
+								{
+									"key": "targetNumber",
+									"value": "11",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "validate_secured_key",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "paymentType",
+							"value": "Fintech",
+							"type": "text"
+						},
+						{
+							"key": "paymentName",
+							"value": "Dompet Realta",
+							"type": "text"
+						},
+						{
+							"key": "securedKey",
+							"value": "322442",
+							"type": "text"
+						},
+						{
+							"key": "accountNumber",
+							"value": "2256281212499837",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3005/user-accounts/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"user-accounts",
+						"auth"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "paymentType",
+							"value": "Fintech",
+							"disabled": true
+						},
+						{
+							"key": "securedKey",
+							"value": "123402",
+							"disabled": true
+						},
+						{
+							"key": "payment",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
