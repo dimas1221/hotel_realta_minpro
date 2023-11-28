@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "@redux-saga/core";
-import rootSaga from '../Sagas';
+import rootSaga from "../Sagas";
 import usersReducers from "../Reducers/Users/usersReducer";
 import departmentReducer from "../Reducers/HumanResources/departmentReducer";
 import employeeReducer from "../Reducers/HumanResources/employeeReducer";
@@ -16,8 +16,9 @@ import policyReducer from "redux/Reducers/Masters/PolicyReducer";
 import PritReducer from "redux/Reducers/Masters/PritReducer";
 import cagroReducer from "redux/Reducers/Masters/CagroReducer";
 import serviceTaskReducer from "redux/Reducers/Masters/serviceTaskReducer";
+import HotelAdminReducer from "../Reducers/Hotels/hotelAdminReducer";
 
-const saga = createSagaMiddleware()
+const saga = createSagaMiddleware();
 const reducer = combineReducers({
   //Master Reducer nya dibawah Comman masing" module
   masterReducers: masterReducers,
@@ -39,7 +40,7 @@ const reducer = combineReducers({
   workorderReducer: workorderReducer,
 
   //Hotels
-
+  HotelAdminReducer: HotelAdminReducer,
   //Booking
 
   //Resto
@@ -47,7 +48,6 @@ const reducer = combineReducers({
   //Payment
 
   //Purchase
-
 });
 const store = configureStore({
   reducer,
@@ -56,6 +56,6 @@ const store = configureStore({
       serializableCheck: false,
     }).concat(saga),
 });
-saga.run(rootSaga)
+saga.run(rootSaga);
 
 export default store;

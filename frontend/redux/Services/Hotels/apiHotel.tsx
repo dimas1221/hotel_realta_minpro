@@ -32,6 +32,7 @@ const getHotelAdmin = async () => {
   try {
     const result = await axios.get("/hotel/view");
     return result;
+    console.log(result, "a");
   } catch (err) {
     return err;
   }

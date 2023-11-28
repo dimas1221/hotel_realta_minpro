@@ -39,9 +39,9 @@ export default function index() {
   const router = useRouter();
   const { TextArea } = Input;
   let dataHotel = useSelector(
-    (state: any) => state.HotelAdminReducer.hotelAdmin
+    (state: any) => state.HotelAdminReducer?.hotelAdmin
   );
-  let dataAddr = useSelector((state: any) => state.AddrHotelReducer.HotelAddr);
+  let dataAddr = useSelector((state: any) => state.AddrHotelReducer?.HotelAddr);
 
   // modalinsert
   const [modal2Open, setModal2Open] = useState(false);
@@ -81,7 +81,7 @@ export default function index() {
 
   // dropdown
   const [dropdowns, setDropdowns] = useState(
-    dataHotel.reduce((acc: any, item: any) => {
+    dataHotel?.reduce((acc: any, item: any) => {
       return { ...acc, [item.hotelId]: false };
     }, {})
   );
@@ -284,7 +284,7 @@ export default function index() {
     const input = e.target.value.toLowerCase().replace(/\s/g, "");
     setQueryHotel(input);
   };
-  const searchResultsHotel = dataHotel.filter((item: any) =>
+  const searchResultsHotel = dataHotel?.filter((item: any) =>
     item.hotelName.toLowerCase().replace(/\s/g, "").includes(queryHotel)
   );
 
